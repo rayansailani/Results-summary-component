@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="/dist/output.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="h-screen w-screen">
+
+  <div class="flex justify-center items-center h-full w-full">
+    <div
+      class="flex md:flex-row min-[320px]:flex-col bg-[#ffffff] md:h-1/2 md:w-2/5 rounded-3xl shadow-lg min-[320px]:h-screen min-[320px]:w-screen">
+      <div
+        class="p-5 flex-auto flex justify-evenly items-center flex-col w-1/2 bg-gradient-to-b from-[#7857ff] to-[#2e2be9] md:rounded-3xl min-[320px]:h-full min-[320px]:w-full min-[320px]:rounded-t-sm min-[320px]:rounded-b-3xl">
+        <p class="text-[#ebf1ff] font-semibold">Your Result</p>
+        <div
+          class="p-8 rounded-full shadow-lg bg-gradeint-to-b from-[#2421ca] to-[#4e21ca] flex flex-col justify-center items-center">
+          <span class="text-white text-5xl font-bold">76</span>
+          <span class="text-[#ebf1ff] text-sm font-bold">of 100</span>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl text-white font-semibold">Great</p>
+          <p class="text-sm text-[#ebf1ff] text-center">You scored higher than 65% of the people who have taken these
+            tests.</p>
+        </div>
+      </div>
+      <div class="py-5 px-5 flex-auto flex flex-col w-2/5 h-full space-y-3 min-[320px]:w-full ">
+        <p class="text-[#303b5a] ml-2 font-bold text-left">Summary</p>
+        <div class="p-3 rounded-xl flex flex-row justify-between w-full bg-red-100">
+          <div class="flex space-x-2">
+            <img src="../dev-assets/assets/images/icon-reaction.svg" alt="">
+            <p class="text-[#ff5757]">Reaction</p>
+          </div>
+          <div>
+            <span class="text-[#303b5a]">80</span>
+            <span class="text-[#b5bbcc]">/ 100</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl flex flex-row justify-between w-full bg-[#ffeac2]">
+          <div class="flex space-x-2">
+            <img src="../dev-assets/assets/images/icon-memory.svg" alt="">
+            <p class="text-[#ffb01f]">Memory</p>
+          </div>
+          <div>
+            <span class="text-[#303b5a]">92</span>
+            <span class="text-[#b5bbcc]">/ 100</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl flex flex-row justify-between w-full bg-[#ccfff3]">
+          <div class="flex space-x-2">
+            <img src="../dev-assets/assets/images/icon-verbal.svg" alt="">
+            <p class="text-[#00bd91]">Verbal</p>
+          </div>
+          <div>
+            <span class="text-[#303b5a]">61</span>
+            <span class="text-[#b5bbcc]">/ 100</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl flex flex-row justify-between w-full bg-[#e7eafd]">
+          <div class="flex space-x-2">
+            <img src="../dev-assets/assets/images/icon-visual.svg" alt="">
+            <p class="text-[#1125d4]">Visual</p>
+          </div>
+          <div>
+            <span class="text-[#303b5a]">72</span>
+            <span class="text-[#b5bbcc]">/ 100</span>
+          </div>
+        </div>
+
+        <button
+          class="bg-[#303b5a] hover:bg-gradient-to-b from-[#2421ca] to-[#4e21ca] text-white font-bold p-3 rounded-2xl">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
